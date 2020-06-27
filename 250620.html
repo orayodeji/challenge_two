@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="wc.css" type="text/css">
+</head>
+<body>
+    <h1>Quick Car Survey</h1>
+    <p id="intro">I'm conducting a survey to learn about how men of different age groups tend to buy their favourite cars. Reflect back to the the time if and when you were looking for a car and try to approach this through those eyes.</p>
+   
+    
+    
+    <form id="survey-form">
+        <div id="form-element">
+        <label for="name" id="name"> Name :</label>
+        <input type="text" id="light-blue" maxlength="29" required>
+        </div>
+        <div id="form-element">
+        <label for="email" id="email">E-Mail</label>
+        <input type="email" placeholder="Enter Your Mail" id="green" required>
+        
+        <label for="Age" id="age">Age</label>
+        <input type="number" min="18" max="75" id="orange" required>
+        </div>
+
+
+             <p>Which Brand of Car Would Like To Acquire</p>
+             <label> 
+                 <input type="radio" value="Toyota" name="first-car" checked >Toyota
+                </input>
+             </label>
+             <label>
+                 <input type="radio" value="Honda" name="first-car">Honda</input>
+             </label>
+             <label>
+                 <input type="radio" value="Nissan" name="first-car">Nissan</input>
+             </label>
+             <label>
+                 <input type="radio" value="Hyundai/Kia" name="first-car">Hyundai/Kai</input>
+             </label>
+             <label>
+                 <input type="radio" value="others" name="first-car" >Others</input>
+             </label>
+             <p>Price Range</p>
+             <label> <input type="radio" value="first-million" name="range" checked>1 Million - 2 Million </input>
+            </label>
+            <label> <input type="radio" value="first-million" name="range">2 Million - 2.5 Million </input>
+            </label>
+
+    </form>
+    <button value="submit" form="survey-form" id="tip">Submit </button>
+</body>
+</html>
